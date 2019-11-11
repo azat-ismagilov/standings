@@ -1,0 +1,10 @@
+{% extends 'basepanel.html' %}
+
+{% block maintext %}   
+	Данные успешно добавлены.
+	<a class="add" href="{% url 'add_handle' %}">Добавить ещё</a>
+	<br>
+	<br>
+	<br>
+	<a class="add" href="{% url 'index' %}">На главную</a>
+{% endblock %}

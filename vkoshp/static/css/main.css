@@ -1,0 +1,697 @@
+body {
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0px;
+}
+
+p {
+    text-align: justify;
+}
+
+li {
+    text-align: justify;
+    padding-right: 10px;
+}
+
+.sparse {
+    padding-bottom: 5px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+table, td, tr {
+    border: none;
+    border-collapse: collapse;
+    vertical-align: top;
+
+    padding: 0px;
+    margin: 0px;
+
+    text-align: justify;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+}
+
+.c {
+    text-align: center;
+}
+
+.cbor {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px silver solid;
+}
+
+.bor {
+    border: silver 1pt solid;
+    padding: 2pt;
+}
+
+.r {
+    text-align: right;
+}
+
+.maintext {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+/* Decoration elements */
+
+table.wrapper {
+    width: 100%;
+    height: 1220px;
+}  
+
+.borderlinev {
+    background-color: #317023;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    background-color: #317023;
+    height: 1px;
+}
+
+.separator {
+    height: 10px;
+}
+
+.error {
+    color: red;
+}
+
+/* End of decoration elements */
+
+/* Links and menu style  */
+
+/* Top Menu */
+.menutop {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+td.menutop {
+    background-color: #EDFFE2;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    border-top: 1px solid #317023;
+    border-bottom: 1px solid #317023;
+}
+
+a.menutop {
+    color: #317023;
+
+    padding-left: 5pt;
+    padding-right: 5pt;
+}
+
+a.menutop:hover {
+    color: #FFFFFF;
+    background-color: #317023;
+}
+
+/* Left Menu */
+
+.menuleft, .menuleftmed, .menuleftsmall {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menuleft {
+    text-align: left;
+    font-size: medium;
+    color: #317023;
+}
+
+.menuleftmed {
+    font-size: small;
+    color: black;
+}
+
+.menuleftsmall {
+    font-size: small;
+    color: gray;
+}
+
+td.menuleft {
+    padding-top: 2px;
+}
+
+a.menuleft, a.menuleftmed, a.menuleftsmall
+{
+    padding-left: 5px;
+    padding-right: 10px;
+
+    width: 250px;
+}
+
+a.menuleft:hover, a.menuleftmed:hover, a.menuleftsmall:hover
+{
+    color: white;
+    background-color: #317023;
+}
+
+td.menuleftbullet {
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+.menuleftcap {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+
+    color: #317023;
+    background-color: #EDFFE2;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+/* Links */
+
+a {
+    color: #317023;
+}
+
+a:hover {
+    background-color: #EDFFE2;
+    color: #317023;
+}
+
+img {
+    border: none;
+}
+
+a.top {
+    color: #B2DABA;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a.top:hover {
+    color: #317023;
+    background-color: #EDFFE2;
+}
+
+/* End of links and menus style */
+
+
+
+/* Welcome page */
+
+table.home-welcome {
+    width: 100%;
+}
+
+.welcome-caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: #317023;
+
+    text-align: center;
+
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+td.itopic {
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+td.important {
+    text-align: justify;
+    font-weight: bold;
+    font-family: helvetica;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+
+td.itopicfin {
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+table.ifinwrapper {
+    width: 80%;
+}
+
+/* End of welcome page */
+
+/* Information pages */
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-align: left;
+    color: #317023;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: left;
+    color: #317023;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: left;
+    color: #317023;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: left;
+    color: #317023;
+}
+
+/* End of information pages */
+
+
+/* Images table */
+
+table.images {
+    border: silver 1px solid;
+    border-collapse: collapse;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+td.image {
+    text-align: center;
+    border: silver 1px solid;
+
+    padding: 5px;
+}
+
+/* End of images table */
+
+/* Resourses */
+
+table.resr {
+    border-collapse: collapse;
+    border: silver 1px solid;
+
+    width: 95%;
+}
+
+td.resr {
+    border: silver 1px solid;
+    width: 25%;
+
+    padding: 2px;
+}
+
+td.resrcomm {
+    border: silver 1px solid;
+    width: 75%;
+
+    padding: 2px;
+}
+
+/* End of resourses */
+
+/* Resourses */
+
+table.links {
+    border-collapse: collapse;
+
+    width: 95%;
+}
+
+td.linksref {
+    width: 25%;
+
+    padding: 2px;
+}
+
+td.linksdesc {
+    width: 75%;
+
+    padding: 2px;
+}
+
+/* End of resourses */
+
+/* Persons */
+
+table.persons {
+    border-collapse: collapse;
+}
+
+td.role {
+    padding: 2px;
+}
+
+td.hfill30 {
+    width: 0;
+    padding-left: 30px;
+}
+
+td.name {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+td.person, td.pos, td.com, td.val {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td.winner {
+    border: 1px silver solid;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+td.winnerc {
+    border: 1px silver solid;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+th.winner {
+    border: 1px silver solid;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* End of persons */
+
+/* Links */
+li.link {
+    padding: 2pt;  
+}
+/* End of links */
+
+/* Time table */
+table.ttable {
+    width: 90%;
+    border: solid 1px silver;
+    border-collapse: collapse;
+}
+
+table.listtable {
+    width: 100%;
+    border: solid 1px silver;
+    border-collapse: collapse;
+}
+
+td.date {
+    border: solid 1px silver;
+    padding: 2px;
+}
+
+td.time {
+    border: solid 1px silver;
+    padding: 2px;
+}
+
+/* End time table */
+
+/* Registred teams */
+table.regteams {
+    width: 90%;
+    border: solid 1px silver;
+    border-collapse: collapse;
+}
+
+th {
+    border: solid 1px silver;
+}
+
+td.rlogin {
+    width: 10%;
+    border: solid 1px silver;
+    padding: 2px;
+    font-family: courier new, courier, monospaced;
+    font-size: smaller;
+    vertical-align: top;
+}
+
+td.rname {
+    border: solid 1px silver;
+    padding: 2px;
+    text-align: left;
+}
+
+td.rclass {
+    border: solid 1px silver;
+    padding: 2px;
+    text-align: left;
+}
+
+td.rvalue {
+    border: solid 1px silver;
+    padding: 2px;
+    text-align: left;
+}
+
+td.rvaluec {
+    border: solid 1px silver;
+    padding: 2px;
+    text-align: center;
+}
+
+td.rnameb {
+    border: solid 1px silver;
+    padding: 2px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td.rpersons {
+    border: solid 1px silver;
+    padding: 2px;
+    text-align: left;
+}
+
+td.tscan {
+    color: #c04040;
+    border: solid 1px silver;
+    padding: 2px;
+}
+
+td.tspen {
+    color: #808040;
+    border: solid 1px silver;
+    padding: 2px;
+}
+
+td.tsgood {
+    color: #0080a0;
+    border: solid 1px silver;
+    padding: 2px;
+}
+
+td.tsacc {
+    color: #00b000;
+    border: solid 1px silver;
+    padding: 2px;
+}
+
+td.tsign {
+    color: #b0b0b0;
+    border: solid 1px silver;
+    padding: 2px;
+}
+
+td.tnbas {
+    color: #00a0a0;
+    border: solid 1px silver;
+    padding: 2px;
+}
+
+td.tnadv {
+    color: #a000a0;
+    border: solid 1px silver;
+    padding: 2px;
+}
+
+/* End of registered teams */
+
+/* Registration */
+table.reg {
+    width: 90%;
+}
+
+td.name {
+    width: 25%;
+}
+
+th.name {
+    padding: 10px;
+}
+
+td.value {
+    width: 75%;
+    vertical-align: bottom;
+}
+/* End of registration */
+
+/* Outcomes table */
+
+table.outcomes {
+    border: silver 1px solid;
+    border-collapse: collapse;
+    margin-top: 10pt;
+}
+
+th.otc {
+    border: silver 1px solid;
+}
+
+td.ocap {
+    text-align: left;
+    border: silver 1px solid;
+    padding: 2pt;
+}
+
+td.ocomm {
+    text-align: left;
+    border: silver 1px solid;
+    padding: 2pt;
+}
+
+td.otest {
+    text-align: center;
+    border: silver 1px solid;
+    padding: 2pt;
+}
+
+/* End of outcomes table */
+
+/* Subregion information */
+
+table.subrinfo, table.subrpcp {
+    border-collapse: collapse;
+    border: 1px silver solid;
+
+    width: 90%;
+    margin-left: 20px;
+}
+
+td.subrinfovar {
+    width: 30%;
+    border: 1px silver solid;
+
+    padding: 2px;
+}
+
+td.subrinfoval {
+    border: 1px silver solid;
+    padding: 2px;
+}
+
+/* End of subregion information */
+
+/* Time table */
+table.ttable {
+    width: 90%;
+    border: silver 1pt solid;
+    border-collapse: collapse;
+}
+
+td.day {
+    border: silver 1pt solid;
+    padding: 2pt;
+    font-family: arial;
+    font-weight: bold;
+}
+
+td.event {
+    border: silver 1pt solid;
+    text-align: left;
+    padding: 2pt;
+}
+
+h1.error {
+    color: #ff0000;
+}
+/* End of time table */
+
+/* Medals */
+
+table.medals {
+    border: silver 1px solid;
+    border-collapse: collapse;
+    width: 95%;
+}
+
+td.mrank {
+    text-align: center;
+    border: silver 1px solid;
+    width: 30px;
+    padding: 2pt;
+}
+
+td.mteam {
+    text-align: left;
+    border: silver 1px solid;
+    width: 40%;
+    padding: 2pt;
+}
+
+td.mcontestants {
+    text-align: left;
+    border: silver 1px solid;
+    padding: 2pt;
+}
+
+tr.gold {
+    background-color: #ffffe0;
+}
+
+tr.silver {
+    background-color: #e8f8ff;
+}
+
+tr.bronze {
+    background-color: #fff0e0;
+}
+
+tr.good {
+    background-color: #e0ffd4;
+}

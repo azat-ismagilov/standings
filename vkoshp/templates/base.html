@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+        {% block title %} <title>Таблица</title> {% endblock %}
+        {% load static %}
+        <link rel="shortcut icon" href="{% static 'icon/favicon.ico' %}">
+        <link rel="stylesheet" class="text/css" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" class="text/css" href="{% static 'css/community.css' %}">
+
+    </head>
+    <body>
+    {% block content %}
+    {% endblock %}
+    </body>
+</html>

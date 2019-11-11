@@ -1,0 +1,13 @@
+{% extends 'basepanel.html' %}
+
+{% block maintext %}   
+	 <form action="" method="post">
+        {% csrf_token %}
+        <table>
+        {{ form }}
+        </table>
+
+        <br>
+        <input type="submit" value="Отправить" />
+    </form>      
+{% endblock %}

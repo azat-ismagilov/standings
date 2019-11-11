@@ -1,0 +1,12 @@
+{% extends 'basepanel.html' %}
+
+{% block maintext %}   
+	<pre> {{profile | pprint}} </pre>  
+	<pre> {{handleinvoice.participant | pprint}} </pre>     
+	<br>
+	<a class="add" href="{% url 'process_invoices_accept' handleinvoice.id %}">Accept</a>     
+	<br>                 
+	<br>         
+	<br>     
+	<a class="add" href="{% url 'process_invoices_decline' handleinvoice.id %}">Decline</a>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'basepanel.html' %}
+
+{% block maintext %} 
+<table class="ttable">
+<colgroup>
+	<col width="5%"> 
+	<col width="10%"> 
+	<col width="5%"> 
+	<col width="30%"> 
+	<col width="30%"> 
+	<col width="30%"> 
+</colgroup>
+<thead>
+	<tr>
+		<th>Место</th>
+		<th>Команда</th>
+		<th>Город</th>
+		<th>Участник 1</th>
+		<th>Участник 2</th>
+		<th>Участник 3</th>
+		<th>Сумма рейтинга</th>
+	</tr>
+</thead>
+<tbody>
+	{% for team in teams %}
+		<tr>
+			<td class="user">{{ forloop.counter }}</td>
+			<td class="user">{{ team.name }}</td>
+			<td class="user">{{ team.city }}</td>
+			{% for participant in team.participant_set.all %}
+				<td class="user medal-{{participant.medal}}">
+					{{participant.name}}
+					<br>
+					{% if participant.has_handle %}
+	                    <a href="{{codeforces_link}}{{participant.codeforces_handle}}">
+                            <div class="rated-user {{participant.get_color}}">
+                                {{participant.codeforces_handle}}
+                        	</div>
+                        </a>
+					{% else %}
+						<a class="add" href="{% url 'add_handle_id' participant.id %}">Add handle</a>
+					{% endif %}
+				</td>
+			{% endfor %}
+			<td class="sum">{{ team.get_rating }}</td>
+		</tr>
+	{% endfor %}
+</tbody>
+</table>
+{% endblock %}

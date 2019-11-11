@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Рейтинг ВКОШП</title>
+{% endblock %}
+
+{% block content %}
+<table class="wrapper">
+    <tbody>
+        <tr>
+            <td>
+                <a id="top"></a>
+            </td>
+        </tr>
+        <td class="c" colspan="5">
+        	<img src="../img/top.gif" width="800" height="97" alt="Олимпиады по информатике. Санкт-Петербург, Россия">
+        </td>
+        <tr>
+                <td class="borderlinev" width="1"><img alt="" height="1" width="1" src="../img/p.gif"></td><td width="25%" valign="top" class="menuleft">
+                    <div class="menuleftcap">ВКОШП</div>
+                    <table class="menuleft">
+                        <tbody>
+                        	<tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/index.html">Главная</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td colspan="2" class="separator"></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/accommodation.html">Проживание</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/timetable.html">Предварительное расписание</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/map.html">Карта</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td colspan="2" class="separator"></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/selection.html">Правила отбора</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/rules.html">Правила олимпиады</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/regional.html">Региональные олимпиады</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/regional-info.html">Организация региона</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td colspan="2" class="separator"></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/internet.html">Интернет-тур</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="registration.jsp">Регистрация</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="listTeams.jsp">Список команд</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="registerSupervisor.jsp">Аккредитация</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="listSupervisors.jsp">Преподаватели</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td colspan="2" class="separator"></td>
+	                        </tr>
+	                        <tr>
+	                            <td class="menuleftbullet"><img alt="*" height="10" width="10" src="../img/d1.gif"></td><td class="menuleft"><a class="menuleft" href="../russia-team/archive.html">Архив олимпиад</a></td>
+	                        </tr>
+	                        <tr>
+	                            <td colspan="2" class="separator"></td>
+	                        </tr>
+	                        <tr>
+	                            <td colspan="2" height="20pt"></td>
+	                        </tr>
+                    	</tbody>
+               		</table>
+                </td><td class="borderlinev" width="1"><img alt="" height="1" width="1" src="../img/p.gif"></td><td width="75%" height="100%">
+                    <table class="maintext" width="100%" height="100%">
+                        <tbody><tr>
+                            <td class="maintext">
+                                <h1>Всероссийская командная олимпиада школьников по программированию</h1>
+								<table class="ttable">
+								<tbody>
+									<tr>
+										<th>Место</th>
+										<th>Команда</th>
+										<th>Город</th>
+										<th>Участник 1</th>
+										<th>Участник 2</th>
+										<th>Участник 3</th>
+										<th>Сумма рейтинга</th>
+									</tr>
+									{% for team in teams %}
+										<tr>
+											<td class="user">{{ forloop.counter }}</td>
+											<td class="user">{{ team.name }}</td>
+											<td class="user">{{ team.city }}</td>
+											{% for participant in team.participant_set.all %}
+												<td class="user medal-{{participant.medal}}">
+													{{participant.name}}
+													<br>
+													{% if participant.has_handle %}
+														<a class="rated-user {{participant.get_color}}" href="{{codeforces_link}}{{participant.codeforces_handle}}">{{participant.codeforces_handle}}</a>
+													{% endif %}
+												</td>
+											{% endfor %}
+											<td class="sum">{{ team.get_rating }}</td>
+										</tr>
+									{% endfor %}
+								</tbody>
+							</table>
+                        </tr>
+                    </tbody></table>
+                </td><td class="borderlinev" width="1"><img alt="" height="1" width="1" src="../img/p.gif"></td>
+            </tr>
+    </tbody>
+</table>
+{% endblock %}
