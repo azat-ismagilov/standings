@@ -38,7 +38,7 @@ class Participant(models.Model):
     codeforces_rating = models.PositiveIntegerField(default=0)
 
     def has_handle(self):
-        return (self.codeforces_handle != "")
+        return self.codeforces_handle != ""
 
     def get_color(self):
         if self.codeforces_rating < 1200:
@@ -57,16 +57,14 @@ class Participant(models.Model):
             return "user-red"
         return "user-legendary"
 
-
     def is_legendary(self):
         return self.codeforces_rating >= 2900
 
-
     def __str__(self):
-        return self.name + '/' + self.team.name
+        return self.name + "/" + self.team.name
+
 
 class HandleInvoice(models.Model):
     participant = models.ForeignKey(Participant, on_delete=models.CASCADE)
 
     handle = models.CharField(max_length=50, blank=True, default="")
-
