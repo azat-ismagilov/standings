@@ -1,3 +1,4 @@
 requests>=2.20.0
 django>=1.0
 pytz>=1.0
+bs4>=1.0
