@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 def index(request):
     try:
-        contest = Contest.objects.all()[0]
+        contest = Contest.objects.get(active=True)
     except:
         raise Http404("No contests available")
     codeforces_link = "https://codeforces.com/profile/"
