@@ -122,7 +122,7 @@ def process_invoices(request):
             },
         )
     except IndexError:
-        return HttpResponseRedirect(reverse("success"))
+        return render(request, "success.html")
 
 
 from .models import HandleInvoice
