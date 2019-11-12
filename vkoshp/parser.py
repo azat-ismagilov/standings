@@ -16,7 +16,7 @@ def parse_soup(soup):
     contest = Contest(name="VKOSHP")
     contest.save()
     for table in soup.find_all("table", {"class": "regteams"}):
-        menus = chunks(table.find_all("td"), 12)
+        menus = chunks(table.find_all("td"), 13)
         for tt in menus:
             try:
                 team_name = BS(str(tt[0])).text.split(":")[1]
@@ -27,14 +27,14 @@ def parse_soup(soup):
             except:
                 team_city = ""
             try:
-                team_region = BS(str(tt[2])).text
+                team_region = BS(str(tt[3])).text
             except:
                 team_region = ""
             team = Team(
                 contest=contest, region=team_region, name=team_name, city=team_city
             )
             team.save()
-            for i in range(6, 9):
+            for i in range(7, 10):
                 try:
                     member1 = BS(str(tt[i])).text
                 except:
